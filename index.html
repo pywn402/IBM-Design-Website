@@ -1628,7 +1628,7 @@
         <!-- 成員 1 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/refs/heads/main/phoebe.png" alt="Phoebe Chen" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/phoebe.png" alt="Phoebe Chen" class="member-img">
             </div>
             <h3 class="member-name">Phoebe Chen</h3>
             <p class="member-role">Experience Design Lead</p>
@@ -1637,7 +1637,7 @@
         <!-- 成員 2 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/refs/heads/main/luju.png" alt="Lu Ju" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/luju.png" alt="Lu Ju" class="member-img">
             </div>
             <h3 class="member-name">Lu Ju</h3>
             <p class="member-role">Senior Experience Designer</p>
@@ -1646,7 +1646,7 @@
         <!-- 成員 3 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/refs/heads/main/wen.png" alt="Wen Wen" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/wen.png" alt="Wen Wen" class="member-img">
             </div>
             <h3 class="member-name">Wen Wen</h3>
             <p class="member-role">Experience Designer</p>
@@ -1655,7 +1655,7 @@
         <!-- 成員 4 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/refs/heads/main/mark.png" alt="Mark Shih" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/mark.png" alt="Mark Shih" class="member-img">
             </div>
             <h3 class="member-name">Mark Shih</h3>
             <p class="member-role">Experience Designer</p>
@@ -1664,7 +1664,7 @@
         <!-- 成員 5 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/refs/heads/main/erin.png" alt="Erin Yao" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/erin.png" alt="Erin Yao" class="member-img">
             </div>
             <h3 class="member-name">Erin Yao</h3>
             <p class="member-role">Experience Designer</p>
@@ -1792,6 +1792,36 @@
             duration: 0.8,
             ease: "power2.out"
         }, "-=0.6");
+
+        // Hero orb 持續緩慢移動動畫（在進場動畫完成後開始）
+        tl.call(() => {
+            const orbLeft = document.querySelector(".hero-orb.orb-left");
+            const orbRight = document.querySelector(".hero-orb.orb-right");
+            
+            if (orbLeft) {
+                gsap.to(orbLeft, {
+                    x: "+=40",
+                    y: "-=50",
+                    scale: 1.12,
+                    duration: 12,
+                    ease: "sine.inOut",
+                    repeat: -1,
+                    yoyo: true
+                });
+            }
+            
+            if (orbRight) {
+                gsap.to(orbRight, {
+                    x: "-=35",
+                    y: "+=45",
+                    scale: 1.18,
+                    duration: 15,
+                    ease: "sine.inOut",
+                    repeat: -1,
+                    yoyo: true
+                });
+            }
+        });
 
         // 3. 宣言部分的文字揭示
         gsap.from(".manifesto", {
