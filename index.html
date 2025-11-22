@@ -775,7 +775,8 @@
             background: rgba(10, 10, 10, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 18px;
-            padding: 2rem 1.5rem 2.5rem;
+            padding: 0 0 2.5rem 0;
+            overflow: hidden;
             transition: transform 0.4s ease, border-color 0.3s ease;
             transform-style: preserve-3d;
             perspective: 1200px;
@@ -804,8 +805,8 @@
             width: 100%;
             height: 320px;
             overflow: hidden;
-            margin-bottom: 1.5rem;
-            border-radius: 12px;
+            margin: 0;
+            border-radius: 18px 18px 0 0;
         }
 
         .member-img {
@@ -825,8 +826,9 @@
 
         .member-name {
             font-size: 1.4rem;
-            margin-bottom: 0.4rem;
+            margin: 1.5rem 1.5rem 0.4rem;
             font-weight: 500;
+            padding: 0;
         }
 
         .member-role {
@@ -835,6 +837,8 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: 300;
+            margin: 0 1.5rem;
+            padding: 0;
         }
 
         /* 頁尾 */
@@ -1250,12 +1254,13 @@
             }
 
             .member {
-                padding: 2rem;
+                padding: 0 0 2rem 0;
                 border-radius: 16px;
                 background: rgba(15, 15, 15, 0.6);
                 border: 1px solid rgba(255, 255, 255, 0.08);
                 transition: transform 0.3s ease, border-color 0.3s ease;
                 margin: 0;
+                overflow: hidden;
             }
 
             .member:active {
@@ -1265,9 +1270,8 @@
 
             .member-img-wrapper {
                 height: 280px;
-                margin-bottom: 1.5rem;
-                margin-top: 0;
-                border-radius: 12px;
+                margin: 0;
+                border-radius: 16px 16px 0 0;
             }
 
             .member-img {
@@ -1276,16 +1280,18 @@
 
             .member-name {
                 font-size: 1.25rem;
-                margin-bottom: 0.5rem;
-                margin-top: 0;
+                margin: 1.5rem 1.5rem 0.5rem;
+                margin-top: 1.5rem;
                 font-weight: 600;
+                padding: 0;
             }
 
             .member-role {
                 font-size: 0.8rem;
                 letter-spacing: 1.5px;
                 opacity: 0.8;
-                margin: 0;
+                margin: 0 1.5rem;
+                padding: 0;
             }
 
             /* 7. Footer - 簡潔設計 */
@@ -1471,9 +1477,9 @@
         <div class="hero-orb orb-right"></div>
         <div class="hero-content centered">
             <div class="hero-copy centered-copy">
-                <span class="hero-eyebrow">IBM Design</span>
+                <span class="hero-eyebrow">IBM Design Studio</span>
                 <h1>
-                    <span class="hero-line hero-focus">IBM Design</span>
+                    <span class="hero-line hero-focus">Design</span>
                     <span class="hero-line hero-focus">for</span>
                     <span class="hero-line hero-sub">Impact</span>
                 </h1>
@@ -1628,7 +1634,7 @@
         <!-- 成員 1 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="phoebe.png" alt="Phoebe Chen" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/phoebe.png" alt="Phoebe Chen" class="member-img">
             </div>
             <h3 class="member-name">Phoebe Chen</h3>
             <p class="member-role">Experience Design Lead</p>
@@ -1637,7 +1643,7 @@
         <!-- 成員 2 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="luju.png" alt="Lu Ju" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/luju.png" alt="Lu Ju" class="member-img">
             </div>
             <h3 class="member-name">Lu Ju</h3>
             <p class="member-role">Senior Experience Designer</p>
@@ -1646,7 +1652,7 @@
         <!-- 成員 3 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="wen.png" alt="Wen Wen" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/wen.png" alt="Wen Wen" class="member-img">
             </div>
             <h3 class="member-name">Wen Wen</h3>
             <p class="member-role">Experience Designer</p>
@@ -1655,7 +1661,7 @@
         <!-- 成員 4 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="mark.png" alt="Mark Shih" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/mark.png" alt="Mark Shih" class="member-img">
             </div>
             <h3 class="member-name">Mark Shih</h3>
             <p class="member-role">Experience Designer</p>
@@ -1664,7 +1670,7 @@
         <!-- 成員 5 -->
         <div class="member hover-target">
             <div class="member-img-wrapper">
-                <img src="erin.png" alt="Erin Yao" class="member-img">
+                <img src="https://raw.githubusercontent.com/pywn402/IBM-Design-Website/main/images/erin.png" alt="Erin Yao" class="member-img">
             </div>
             <h3 class="member-name">Erin Yao</h3>
             <p class="member-role">Experience Designer</p>
